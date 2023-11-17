@@ -1,9 +1,10 @@
+
 import * as React from 'react';
 import Layout from '../components/layout';
 
 const Recipes = () => {
   return (
-    <Layout>
+    <Layout showAside={true}>
       <h1>Pagina de Receitas</h1>
       <p></p>
     </Layout>

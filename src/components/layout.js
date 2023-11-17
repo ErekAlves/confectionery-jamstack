@@ -1,8 +1,9 @@
+// layout.js
 import * as React from 'react';
 import { Link } from 'gatsby';
 import './layout.css';
 
-export default function Layout({ children }) {
+export default function Layout({ children, showAside }) {
   return (
     <main className="layout">
       <div className="header">
@@ -14,9 +15,11 @@ export default function Layout({ children }) {
       </div>
       <div className="main">
         {children}
-        <aside>AQUI VAI UMA LISTA</aside>
+        {showAside && <aside>AQUI VAI UMA LISTA</aside>}
       </div>
-      <div className="footer">Rodapé</div>
+      <div className="footer">
+        <p>&copy; Projeto Jamstack com gatsby. Todos os direitos reservados.</p>
+      </div>
     </main>
   );
 }
