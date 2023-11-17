@@ -1,14 +1,15 @@
 import * as React from 'react';
+import Layout from '../components/layout';
 
 const IndexPage = () => {
   return (
-    <main>
+    <Layout>
       <h1>Pagina Principal</h1>
       <p></p>
-    </main>
+    </Layout>
   );
 };
 
 export default IndexPage;
 
-export const Head = () => <title>Home Page</title>;
+export const Head = () => <title>Pagina Principal</title>;

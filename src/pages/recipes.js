@@ -1,14 +1,15 @@
 import * as React from 'react';
+import Layout from '../components/layout';
 
 const Recipes = () => {
   return (
-    <main>
-      <h1>Teste</h1>
+    <Layout>
+      <h1>Pagina de Receitas</h1>
       <p></p>
-    </main>
+    </Layout>
   );
 };
 
-export default Recipes;
+export default Recipes; 
 
 export const Head = () => <title>Receitas Page</title>;
