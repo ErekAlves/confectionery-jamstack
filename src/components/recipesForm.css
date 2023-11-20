@@ -1,0 +1,53 @@
+.centered-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ form {
+    max-width: 400px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  p {
+    margin-top: -10px;
+    margin-bottom: 25px;
+    color: red;
+  }
+
+  .recipe-form p {
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  @media (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+  }

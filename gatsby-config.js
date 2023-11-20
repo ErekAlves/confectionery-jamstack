@@ -1,9 +1,14 @@
-/**
- * @type {import('gatsby').GatsbyConfig}
- */
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://www.yourdomain.tld`,
+    title: 'jean erek alves '
   },
-  plugins: [],
+  plugins: [
+  {    
+    resolve: 'gatsby-source-filesystem',
+        options: {
+          name: 'recipes',
+          path: `${__dirname}/recipes`
+        }
+      }
+  ],
 }
