@@ -9,6 +9,7 @@ module.exports = {
           name: 'recipes',
           path: `${__dirname}/recipes`
         }
-      }
+      },
+      'gatsby-plugin-mdx',
   ],
 }
